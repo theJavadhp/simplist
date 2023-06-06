@@ -139,9 +139,23 @@ h6 {
 #header {
   .btn {
     &.btn-primary {
-      background-color: black;
       color: $color_secondary1;
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: $color_primary;
+      border: 1px solid $color_secondary1;
+      position: relative;
+      border-radius: 5px;
+      margin-left: 1rem;
     }
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-link {
+    margin: 0 1rem;
   }
 }
 
@@ -207,9 +221,9 @@ h6 {
       display: inline-block;
       padding: 12px 30px;
       background-color: $color_primary;
-      // border: 2px solid $color_secondary1;
+      border: 1px solid $color_secondary1;
       position: relative;
-      border-radius: 12px;
+      border-radius: 5px;
       img {
         transition: all 0.4s ease-in-out;
       }

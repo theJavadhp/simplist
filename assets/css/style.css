@@ -99,8 +99,22 @@ h6 {
 /*--------------------------------------------------------------
 --------------------------------------------------------------*/
 #header .btn.btn-primary {
-  background-color: black;
   color: #eeff30;
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #000000;
+  border: 1px solid #eeff30;
+  position: relative;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+#header .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header .nav-link {
+  margin: 0 1rem;
 }
 
 #hero {
@@ -161,8 +175,9 @@ h6 {
   display: inline-block;
   padding: 12px 30px;
   background-color: #000000;
+  border: 1px solid #eeff30;
   position: relative;
-  border-radius: 12px;
+  border-radius: 5px;
 }
 #hero .app_btn a img {
   transition: all 0.4s ease-in-out;

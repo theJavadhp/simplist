@@ -42,7 +42,11 @@ body {
   color: $color_primary;
   font-variant-ligatures: no-common-ligatures;
   background-color: $color_secondary2;
+}
 
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 a {
@@ -137,18 +141,6 @@ h6 {
 /*--------------------------------------------------------------
 --------------------------------------------------------------*/
 #header {
-  .btn {
-    &.btn-primary {
-      color: $color_secondary1;
-      display: inline-block;
-      padding: 12px 30px;
-      background-color: $color_primary;
-      border: 1px solid $color_secondary1;
-      position: relative;
-      border-radius: 5px;
-      margin-left: 1rem;
-    }
-  }
   .nav-item {
     display: flex;
     align-items: center;
@@ -156,6 +148,72 @@ h6 {
   }
   .nav-link {
     margin: 0 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: $color_primary;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      text-shadow: 0px 0px 10px #EEFF30;
+    }
+  }
+}
+
+.btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  border: none;
+  width: 163px;
+  height: 47px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  background-color: $color_primary;
+  color: $color_secondary1;
+
+  &.app_btn {
+    position: relative;
+    img {
+      width: 100px;
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-color: $color_primary;
+      color: $color_secondary1;
+      box-shadow: 0px 0px 10px $color_secondary1;
+      img {
+        &:first-child {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: block;
+        }
+      }
+    }
+    &:focus,
+    &:active {
+      background-color: $color_secondary1;
+      color: $color_primary;
+      img {
+        &:first-child {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          display: block;
+        }
+      }
+    }
   }
 }
 
@@ -188,64 +246,34 @@ h6 {
       font-weight: bold;
       -webkit-text-stroke: 1px $color_secondary1;
     }
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      background-image: url(../img/hero-bg-1.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 400px;
-      height: 350px;
-      z-index: -2;
-      top: 25%;
-      left: 10%;
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   background-image: url(../img/hero-bg-1.svg);
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   width: 400px;
+    //   height: 350px;
+    //   z-index: -2;
+    //   top: 25%;
+    //   left: 10%;
+    // }
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   background-image: url(../img/hero-bg-2.svg);
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   width: 400px;
+    //   height: 350px;
+    //   z-index: -1;
+    //   top: 30%;
+    //   left: 40%;
+    // }
+  }
 
-    }
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      background-image: url(../img/hero-bg-2.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 400px;
-      height: 350px;
-      z-index: -1;
-      top: 30%;
-      left: 40%;
-    }
-  }
-  .app_btn {
-    a {
-      display: inline-block;
-      padding: 12px 30px;
-      background-color: $color_primary;
-      border: 1px solid $color_secondary1;
-      position: relative;
-      border-radius: 5px;
-      img {
-        transition: all 0.4s ease-in-out;
-      }
-      .yellow_img {
-        opacity: 0;
-      }
-      .white_img {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 1;
-      }
-      &:hover {
-        .yellow_img {
-          opacity: 1;
-        }
-        .white_img {
-          opacity: 0;
-        }
-      }
-    }
-  }
   .hero_slider {
     display: flex;
     position: relative;
@@ -277,6 +305,19 @@ h6 {
 
       .owl-dots {
         margin-top: 20px;
+        .owl-dot {
+          span {
+            background-color: white;
+            border: 1px solid $color_primary;
+            width: 15px;
+            height: 15px;
+          }
+          &.active {
+            span {
+              background-color: $color_secondary1;
+            }
+          }
+        }
       }
     }
     .iphone_frame {

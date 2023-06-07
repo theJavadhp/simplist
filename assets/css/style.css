@@ -11,6 +11,11 @@ body {
   background-color: #f0f0f0;
 }
 
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 a {
   color: #0563bb;
   text-decoration: none;
@@ -98,16 +103,6 @@ h6 {
 
 /*--------------------------------------------------------------
 --------------------------------------------------------------*/
-#header .btn.btn-primary {
-  color: #eeff30;
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #000000;
-  border: 1px solid #eeff30;
-  position: relative;
-  border-radius: 5px;
-  margin-left: 1rem;
-}
 #header .nav-item {
   display: flex;
   align-items: center;
@@ -115,6 +110,63 @@ h6 {
 }
 #header .nav-link {
   margin: 0 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+#header .nav-link:hover {
+  text-shadow: 0px 0px 10px #EEFF30;
+}
+
+.btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  border: none;
+  width: 163px;
+  height: 47px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+  color: #eeff30;
+}
+.btn.app_btn {
+  position: relative;
+}
+.btn.app_btn img {
+  width: 100px;
+}
+.btn.app_btn img:nth-child(2), .btn.app_btn img:nth-child(3) {
+  display: none;
+}
+.btn.app_btn:hover {
+  background-color: #000000;
+  color: #eeff30;
+  box-shadow: 0px 0px 10px #eeff30;
+}
+.btn.app_btn:hover img:first-child {
+  display: none;
+}
+.btn.app_btn:hover img:nth-child(2) {
+  display: block;
+}
+.btn.app_btn:focus, .btn.app_btn:active {
+  background-color: #eeff30;
+  color: #000000;
+}
+.btn.app_btn:focus img:first-child, .btn.app_btn:active img:first-child {
+  display: none;
+}
+.btn.app_btn:focus img:nth-child(2), .btn.app_btn:active img:nth-child(2) {
+  display: none;
+}
+.btn.app_btn:focus img:nth-child(3), .btn.app_btn:active img:nth-child(3) {
+  display: block;
 }
 
 #hero {
@@ -144,58 +196,6 @@ h6 {
   font-size: 105px;
   font-weight: bold;
   -webkit-text-stroke: 1px #eeff30;
-}
-#hero .hero_text::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url(../img/hero-bg-1.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 350px;
-  z-index: -2;
-  top: 25%;
-  left: 10%;
-}
-#hero .hero_text::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url(../img/hero-bg-2.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 350px;
-  z-index: -1;
-  top: 30%;
-  left: 40%;
-}
-#hero .app_btn a {
-  display: inline-block;
-  padding: 12px 30px;
-  background-color: #000000;
-  border: 1px solid #eeff30;
-  position: relative;
-  border-radius: 5px;
-}
-#hero .app_btn a img {
-  transition: all 0.4s ease-in-out;
-}
-#hero .app_btn a .yellow_img {
-  opacity: 0;
-}
-#hero .app_btn a .white_img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 1;
-}
-#hero .app_btn a:hover .yellow_img {
-  opacity: 1;
-}
-#hero .app_btn a:hover .white_img {
-  opacity: 0;
 }
 #hero .hero_slider {
   display: flex;
@@ -228,6 +228,15 @@ h6 {
 }
 #hero .hero_slider #slides .owl-dots {
   margin-top: 20px;
+}
+#hero .hero_slider #slides .owl-dots .owl-dot span {
+  background-color: white;
+  border: 1px solid #000000;
+  width: 15px;
+  height: 15px;
+}
+#hero .hero_slider #slides .owl-dots .owl-dot.active span {
+  background-color: #eeff30;
 }
 #hero .hero_slider .iphone_frame {
   position: absolute;

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Simplist</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!--  scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="assets/libraries/OwlCarousel/owl.carousel.min.js"></script>
+
+    <!--  CSS Files -->
+    <link rel="stylesheet" href="assets/libraries/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libraries/OwlCarousel/owl.theme.default.min.css">
+    <link href="assets/libraries/aos/aos.css" rel="stylesheet" />
+    <link href="assets/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="assets/libraries/boxicons/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  ======================================================== -->
+</head>
+
+<body class="app_test">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/logo_type.svg" width="106" alt="">
+            </div>
+            <div class="user">
+                <span>Hi Aleeza!</span>
+                <img src="assets/img/user.png" alt="">
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="list">
+                <div class="list-header">
+                    <div class="list-title">
+                        <i class="bx bx-chevron-left bx-md"></i>
+                        <!-- <h1>Add Title</h1> -->
+                        <input class="form-control" id="" placeholder="Add Title">
+                    </div>
+                    <div class="btn-group">
+                        <a type="button" class="" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bx bx-dots-horizontal-rounded bx-md"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <button class="dropdown-item" type="button">
+                                    <i class='bx bxs-lock-alt'></i>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <i class='bx bxs-user'></i>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">
+                                    <i class='bx bxs-file-blank'></i>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">
+                                    <i class='bx bxs-lock-alt'></i>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">
+                                    <i class='bx bxs-folder'></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-details">
+                    <div class="todos">
+                        <ul id="todos" class="list-items"></ul>
+                    </div>
+                    <div class="list-input">
+                        <!-- <span class="checkbox"></span> -->
+                        <div id="to-do-app">
+
+                            <input id="new-todo" placeholder="enter items here" />
+
+                        </div>
+
+                    </div>
+                    <div class="add-items">
+                        <label for="new-todo">
+                            <i class='bx bx-plus'></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- =======================================================
+  ======================================================== -->
+    <!-- <div id="preloader"></div> -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Invite</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture.png" alt="">
+                            <span>
+                                Ali
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture-1.png" alt="">
+                            <span>
+                                Lian Lan
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture-2.png" alt="">
+                            <span>
+                                Javad
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture-3.png" alt="">
+                            <span>
+                                Rida
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture-4.png" alt="">
+                            <span>
+                                Rose
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="assets/libraries/aos/aos.js"></script>
+    <script src="assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

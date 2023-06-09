@@ -13,10 +13,8 @@ body {
 
 section {
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 a {
@@ -109,6 +107,8 @@ h6 {
   width: 100%;
   z-index: 99999;
   transition: 0.4s all;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 #header .nav-item {
   display: flex;
@@ -193,31 +193,23 @@ h6 {
 
 #hero {
   position: relative;
-  padding-top: 0;
-}
-#hero::after {
-  content: "";
-  display: block;
-  background-image: url(../img/hero_bottom.svg);
+  padding-top: 10rem;
+  margin-top: -97px;
+  background-image: url(../img/banner1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100px;
-  background-position: center;
-  margin-top: -50px;
-  position: absolute;
-  bottom: -83px;
-  left: 0;
-  right: 0;
+  background-position: top right;
+  z-index: -1;
 }
 #hero .hero_text p {
-  margin-bottom: -14px;
+  margin: 2rem 0;
 }
-#hero .hero_text p span {
+#hero .hero_text span {
   display: inline-block;
   width: 60px;
   height: 10px;
   background-color: black;
+  margin-bottom: -14px;
 }
 #hero .hero_text h1 {
   font-size: 105px;
@@ -227,20 +219,6 @@ h6 {
 #hero .hero_slider {
   display: flex;
   position: relative;
-}
-#hero .hero_slider::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url(../img/hero-bg-3.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
 }
 #hero .hero_slider #slides {
   width: 300px;
@@ -258,9 +236,9 @@ h6 {
 }
 #hero .hero_slider #slides .owl-dots .owl-dot span {
   background-color: white;
-  border: 1px solid #000000;
   width: 15px;
   height: 15px;
+  border: 1px solid rgb(15, 15, 15);
 }
 #hero .hero_slider #slides .owl-dots .owl-dot.active span {
   background-color: #eeff30;
@@ -288,7 +266,7 @@ h6 {
 }
 #features .feature div {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 #features .feature div span {
   display: inline-flex;
@@ -301,20 +279,19 @@ h6 {
   position: relative;
   z-index: 10;
 }
+#features .feature div h5 {
+  font-size: 32px;
+  color: #eeff30;
+}
 #features .feature div i {
-  color: #000000;
+  color: #eeff30;
 }
 #features .feature div p {
-  color: #000000;
+  color: white;
 }
 #features .feature_detail {
-  background-color: #f0f0f0;
-  border-radius: 30px;
-  position: relative;
   margin-top: 120px;
   padding-top: 60px;
-  padding-bottom: 20px;
-  border: 2px solid #eeff30;
 }
 #features .hf-img {
   position: relative;
@@ -322,7 +299,7 @@ h6 {
 }
 #features .hf-img img {
   position: absolute;
-  height: 460px;
+  height: 500px;
   top: -125px;
   margin: auto;
   box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.168627451);
@@ -330,28 +307,15 @@ h6 {
   left: 50%;
   transform: translateX(-50%);
 }
-#features::after {
-  content: "";
-  display: block;
-  background-image: url(../img/feature_bottom.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100px;
-  background-position: center;
-  margin-top: -50px;
-  position: absolute;
-  bottom: -98px;
-  left: 0;
-  right: 0;
-}
 
+#how_it_work {
+  background-color: #000000;
+}
 #how_it_work.how_it_works .how_it_inner {
-  background-color: white;
-  padding: 70px 0;
+  background-color: rgb(255, 255, 255);
+  padding: 70px 30px;
   border-radius: 30px;
-  box-shadow: 0px 4px 30px #ede9fe;
-  border: 2px solid #eeff30;
+  box-shadow: 0px 4px 30px #636363;
 }
 #how_it_work.how_it_works .how_it_inner .step_block ul {
   max-width: 1080px;
@@ -377,7 +341,7 @@ h6 {
   left: 50%;
   top: 50px;
   transform: translateX(-50%);
-  width: 4px;
+  width: 2px;
   height: calc(100% + 100px);
   background-color: #000000;
 }
@@ -387,8 +351,8 @@ h6 {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   background-color: #000000;
   border-radius: 15px;
 }
@@ -410,8 +374,30 @@ h6 {
 #how_it_work.how_it_works .how_it_inner .step_block ul li .step_img img {
   max-width: 100%;
 }
+#how_it_work.how_it_works .how_it_inner .step_block ul li .app_icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#how_it_work.how_it_works .how_it_inner .step_block ul li .app_icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #000000;
+  color: white;
+  font-size: 32px;
+  margin: 0.5rem;
+  transition: 0.4s all;
+}
+#how_it_work.how_it_works .how_it_inner .step_block ul li .app_icon a:hover {
+  color: #eeff30;
+  box-shadow: 0px 4px 10px #636363;
+}
 #how_it_work.how_it_works .how_it_inner .step_block ul li .step_number {
-  background-image: url(../../images/icon_bg.png);
+  background-image: url(../img/icon_bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -873,6 +859,7 @@ h6 {
   height: 30px;
   border-radius: 100px;
   border: none;
+  color: #000000;
   background-color: #eeff30;
 }
 .app_test .modal .modal-content .modal-body .list-item button:hover {

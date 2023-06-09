@@ -49,6 +49,17 @@
     <main>
         <div class="container">
             <div class="list">
+                <div class="sharing">
+                    <div class="invite">
+                        <button class="" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>invite</span>
+                            <i class='bx bx-plus ms-1'></i>
+                        </button>
+                    </div>
+                    <div class="task-count">
+                        <span id="countSpan">0</span>
+                    </div>
+                </div>
                 <div class="list-header">
                     <div class="list-title">
                         <i class="bx bx-chevron-left bx-md"></i>
@@ -103,7 +114,7 @@
 
                     </div>
                     <div class="add-items">
-                        <label for="new-todo">
+                        <label id="addButton" for="new-todo">
                             <i class='bx bx-plus'></i>
                         </label>
                     </div>
@@ -121,7 +132,7 @@
             class="bi bi-arrow-up-short"></i>
     </a>
 
-    <!-- Modal -->
+    <!-- First Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -137,7 +148,7 @@
                                 Ali
                             </span>
                         </div>
-                        <button>Invite</button>
+                        <button data-bs-target="#message" data-bs-toggle="modal">Invite</button>
                     </div>
                     <div class="list-item">
                         <div>
@@ -179,6 +190,23 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second Modal -->
+    <div class="modal fade" id="message" aria-hidden="true" aria-labelledby="ToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content align-items-center">
+                <div class="modal-header">
+                    <img src="assets/img/checkmark_lg.svg" alt="">
+                </div>
+                <div class="modal-body">
+                   <span>Ali</span> has been invited to “Weekly Shopping” Task!
+                </div>
+                <div class="modal-footer">
+                           <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">Ok</button>
                 </div>
             </div>
         </div>

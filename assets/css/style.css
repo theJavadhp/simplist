@@ -20,11 +20,9 @@ section {
 }
 
 a {
-  color: #0563bb;
   text-decoration: none;
 }
 a:hover {
-  color: #067ded;
   text-decoration: none;
 }
 
@@ -59,7 +57,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0563bb;
+  background: #000000;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -67,12 +65,12 @@ h6 {
 }
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #eeff30;
   line-height: 0;
 }
 .back-to-top:hover {
   background: #0678e3;
-  color: #fff;
+  color: #000000;
 }
 
 .back-to-top.active {
@@ -111,9 +109,6 @@ h6 {
   width: 100%;
   z-index: 99999;
   transition: 0.4s all;
-  /* margin-top: 20px; */
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 #header .nav-item {
   display: flex;
@@ -199,14 +194,11 @@ h6 {
 #hero {
   position: relative;
   padding-top: 0;
-  background-image: url("../img/banner1@2x.svg");
-  background-size: cover;
-  margin-top: 20px;
 }
 #hero::after {
   content: "";
   display: block;
-  /* background-image: url(../img/hero_bottom.svg); */
+  background-image: url(../img/hero_bottom.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -219,8 +211,7 @@ h6 {
   right: 0;
 }
 #hero .hero_text p {
-  /* margin-bottom: px; */
-      margin-top: 15px;
+  margin-bottom: -14px;
 }
 #hero .hero_text p span {
   display: inline-block;
@@ -241,10 +232,7 @@ h6 {
   content: "";
   display: block;
   position: absolute;
-  /* background-image: url(../img/hero-bg-3.svg); */
-  /* deleted yellow images */
- 
-  
+  background-image: url(../img/hero-bg-3.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -253,8 +241,6 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-
-  
 }
 #hero .hero_slider #slides {
   width: 300px;
@@ -263,7 +249,6 @@ h6 {
 #hero .hero_slider #slides .owl-item {
   border-radius: 25px;
   overflow: hidden;
-  margin-top: 40px;
 }
 #hero .hero_slider #slides .owl-stage-outer {
   border-radius: 30px;
@@ -272,14 +257,13 @@ h6 {
   margin-top: 20px;
 }
 #hero .hero_slider #slides .owl-dots .owl-dot span {
-  background-color: black;
-  border: none;
+  background-color: white;
+  border: 1px solid #000000;
   width: 15px;
   height: 15px;
 }
 #hero .hero_slider #slides .owl-dots .owl-dot.active span {
   background-color: #eeff30;
-  margin-top: 40px;
 }
 #hero .hero_slider .iphone_frame {
   position: absolute;
@@ -287,19 +271,14 @@ h6 {
   transform: translateX(-50%);
   z-index: 999;
   width: 323px;
-  /* add margin top */
-  margin-top: 40px;
 }
 #hero .hero_slider .iphone_frame img {
   vertical-align: middle;
   border-style: none;
-  
 }
 
 #features {
   background-color: #000000;
-  padding-top: 120px;
-  margin-top: 0px;
 }
 #features h2 {
   color: #eeff30;
@@ -329,7 +308,7 @@ h6 {
   color: #000000;
 }
 #features .feature_detail {
-  background-color: white;
+  background-color: #f0f0f0;
   border-radius: 30px;
   position: relative;
   margin-top: 120px;
@@ -354,7 +333,7 @@ h6 {
 #features::after {
   content: "";
   display: block;
-  /* background-image: url(../img/feature_bottom.svg); */
+  background-image: url(../img/feature_bottom.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -492,12 +471,55 @@ h6 {
 }
 .app_test button {
   transition: all 0.3s ease-in-out;
+  border: none;
 }
 .app_test ::-moz-placeholder {
   color: rgb(182, 182, 182);
 }
 .app_test ::placeholder {
   color: rgb(182, 182, 182);
+}
+.app_test .sharing {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app_test .sharing .invite button {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: #000000;
+  border-radius: 30px;
+}
+.app_test .sharing .invite button i {
+  color: #eeff30;
+}
+.app_test .sharing .invite button:hover {
+  background-color: #eeff30;
+  color: #000000;
+}
+.app_test .sharing .invite button:hover i {
+  color: #000000;
+}
+.app_test .sharing .task-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #eeff30;
+  background-color: #272727;
+  border: 1px solid #272727;
+  border-radius: 50px;
 }
 .app_test header .container {
   display: flex;
@@ -658,14 +680,6 @@ h6 {
   width: 20px;
   height: 20px;
 }
-.app_test .list .list-input::before {
-  content: "";
-  width: 10px;
-  height: 20px;
-  background-image: url(../img/drag.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 .app_test .list .add-items {
   width: 100%;
 }
@@ -712,26 +726,6 @@ h6 {
     overflow: auto;
   }
 }
-.app_test .list #to-do-app ::-webkit-scrollbar {
-  width: 20px;
-}
-.app_test .list #to-do-app ::-webkit-scrollbar-track {
-  background: rgb(255, 240, 245);
-  border-radius: 30px;
-}
-.app_test .list #to-do-app ::-webkit-scrollbar-thumb {
-  background: #f2a899;
-  border: solid 7px rgb(255, 240, 245);
-  border-radius: 30px;
-}
-.app_test .list #to-do-app ::-webkit-scrollbar-thumb:hover {
-  background: #f2a899;
-}
-.app_test .list aside {
-  text-align: right;
-  font: italic 1.4rem "Caladea", serif;
-  padding: 0 2.5rem;
-}
 .app_test .list .list-items {
   display: flex;
   flex-direction: column;
@@ -766,7 +760,6 @@ h6 {
 }
 .app_test .list .list-items li label {
   position: relative;
-  vertical-align: middle;
   cursor: pointer;
   display: block;
   padding-left: 30px;
@@ -906,4 +899,14 @@ h6 {
 .app_test .modal .modal-content .modal-footer .btn:hover {
   background-color: #eeff30;
   color: #000000;
+}
+.app_test .modal#message {
+  color: white;
+  text-align: center;
+}
+.app_test .modal#message .modal-body span {
+  color: #eeff30;
+}
+.app_test .modal#message .modal-footer {
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

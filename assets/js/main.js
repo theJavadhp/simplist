@@ -18,6 +18,27 @@ $("#slides").owlCarousel({
   },
 });
 
+
+$('#team_slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    smartSpeed: 2500,
+    dots: true, 
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
 // Fix Header Js
 $(window).scroll(function () {
   if ($(window).scrollTop() >= 250) {

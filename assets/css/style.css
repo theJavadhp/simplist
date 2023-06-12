@@ -550,6 +550,10 @@ footer .copyright {
     width: 75%;
     margin: auto;
   }
+  #features .feature {
+    display: flex;
+    justify-content: center;
+  }
   #features .feature div {
     text-align: left;
     margin-bottom: 4rem;

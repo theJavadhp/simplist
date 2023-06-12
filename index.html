@@ -42,7 +42,7 @@
         <a class="navbar-brand" href="#">
           <img src="assets/img/logo_black.png" width="120" alt="image">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon">
             <!-- <i class="icofont-navigation-menu ico_menu"></i> -->
@@ -52,14 +52,11 @@
           </span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <!-- secondery menu start -->
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
             </li>
-            <!-- secondery menu end -->
-
             <li class="nav-item">
               <a class="nav-link" href="#features">Features</a>
             </li>
@@ -92,8 +89,7 @@
 
 
             <!-- h1 -->
-            <span></span>
-            <h1>Simplist</h1>
+            <img src="assets/img/hero_logo.svg" alt="">
             <!-- p -->
             <p>
               Simplist designed for effortless task management and collaboration. With its user-friendly design,
@@ -101,7 +97,7 @@
               organized and work together seamlessly with Simplist.
           </div>
           <!-- app buttons -->
-          <div class="mt-3">
+          <div class="mt-3 m-auto ms-lg-0">
             <a class="btn app_btn me-3" href="https://thejavadhp.github.io/simplist/app.html" target="_blank">
               <img class="yellow_img" src="assets/img/appstore_white.svg" alt="image">
               <img class="yellow_img" src="assets/img/appstore_yellow.svg" alt="image">
@@ -153,7 +149,7 @@
         </div>
         <div class="feature_detail">
           <div class="row justify-content-center">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-8 order-1">
               <div class="feature">
                 <div>
                   <span>
@@ -173,15 +169,15 @@
 
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 order-0 order-lg-2 mb-5 mb-lg-0">
               <div class="hf-img">
-                <video class="object-fit-contain" autoplay loop >
+                <video class="object-fit-contain" autoplay loop>
                   <source src="assets/img/video.MP4" type="video/mp4">
                 </video>
                 <!-- <img class="img-fluid" src="assets/img/Create_Checklist_HF.png" alt=""> -->
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-8 order-3">
               <div>
                 <div class="feature">
                   <div>
@@ -235,9 +231,9 @@
                     <a href="#"><i class='bx bxl-chrome'></i></a>
                   </div>
                 </div>
-                <div class="step_number">
+                <!-- <div class="step_number">
                   <h3>1</h3>
-                </div>
+                </div> -->
                 <div class="step_img">
                   <img src="assets/img/download.png" alt="image">
                 </div>
@@ -249,11 +245,11 @@
                   <h4>Create and Invite the people</h4>
                   <p>Easily create your task lists and share them with friends, family, or colleagues.</p>
                 </div>
-                <div class="step_number">
+                <!-- <div class="step_number">
                   <h3>2</h3>
-                </div>
+                </div> -->
                 <div class="step_img">
-                  <img src="assets/img/invite_people.png" alt="image">
+                  <img src="assets/img/collaborate.png" alt="image">
                 </div>
               </li>
 
@@ -264,11 +260,11 @@
                   <p>Work together in real-time, assign tasks, track progress, and accomplish your goals efficiently.
                   </p>
                 </div>
-                <div class="step_number">
+                <!-- <div class="step_number">
                   <h3>3</h3>
-                </div>
+                </div> -->
                 <div class="step_img ">
-                  <img src="assets/img/working_together.png" alt="image">
+                  <img src="assets/img/sharing.png" alt="image">
                 </div>
               </li>
             </ul>
@@ -286,8 +282,11 @@
           <!-- h2 -->
           <h2 class="display-6 fw-bold">Our Team</h2>
           <!-- p -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe
-            standard dummy.</p>
+          <p>
+            Together, our Simplist App Development team combines the powers of UI design, UX research, and development
+            to bring your app ideas to life. With a perfect blend of creativity, user-centricity, and technical
+            expertise, we collaborate seamlessly to create an app that is simple, elegant, and unforgettable.
+          </p>
         </div>
         <div class="team_block aos-init aos-animate" data-aos="fade-in" data-aos-duration="1500">
           <div id="team_slider" class="owl-carousel">
@@ -295,14 +294,16 @@
               <div class="team_slide_box">
 
                 <div class="team_img">
-                  <img src="" alt="image">
+                  <img src="assets/img/Rida.jpg" alt="image">
                 </div>
                 <h3>Rida</h3>
                 <span class="designation">Head of Design</span>
                 <p class="review">
                   <i class='bx bxs-quote-alt-left'></i>
-                  some text
-                  <i class='bx bxs-quote-alt-right'></i>
+                  Hey there! I'm Rida Fatima, I took care of Project Management and UI Design for our team. I'm a master
+                  of juggling design magic and project wizardry. With my superpowers in UI design and project
+                  management, I ensure our projects are not only visually stunning but also delivered on time. I love
+                  creating user interfaces that make people say, "Wow! <i class='bx bxs-quote-alt-right'></i>
                 </p>
               </div>
             </div>
@@ -311,14 +312,15 @@
               <div class="team_slide_box">
 
                 <div class="team_img">
-                  <img src="" alt="image">
+                  <img src="assets/img/lian.jpg" alt="image">
                 </div>
                 <h3>Lian</h3>
                 <span class="designation">Head of Research</span>
                 <p class="review">
                   <i class='bx bxs-quote-alt-left'></i>
-                 some text
-                  <i class='bx bxs-quote-alt-right'></i>
+                  Unleashing the power of user insights, fueled by collaborative thinking with a great team, to create
+                  meaningful and user-centric experiences that drive innovation and transform lives <i
+                    class='bx bxs-quote-alt-right'></i>
                 </p>
               </div>
             </div>
@@ -352,9 +354,9 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-      <div class="copyright">
-        ALL © RESERVED BY <img class="ms-2" src="assets/img/logo_black.png" height="20" alt="">
-      </div>
+    <div class="copyright">
+      ALL © RESERVED BY <img class="ms-2" src="assets/img/logo_black.png" height="20" alt="">
+    </div>
   </footer>
   <!-- End Footer -->
 

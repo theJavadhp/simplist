@@ -103,25 +103,20 @@ h6 {
 /*--------------------------------------------------------------
 --------------------------------------------------------------*/
 #header {
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 99999;
   transition: 0.4s all;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-#header .navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
+  background-color: transparent;
 }
 #header .nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 #header .nav-link {
   margin: 0 1rem;
@@ -133,6 +128,9 @@ h6 {
 }
 #header .nav-link:hover {
   text-shadow: 0px 0px 10px #eeff30;
+}
+#header .navbar-brand img {
+  box-shadow: 0px 4px 9px 1px rgba(209, 209, 209, 0.39);
 }
 #header.fix_style {
   position: fixed;
@@ -202,7 +200,6 @@ h6 {
 #hero {
   position: relative;
   padding-top: 7rem;
-  margin-top: -97px;
   background-image: url(../img/banner1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -315,10 +312,17 @@ h6 {
   background-color: #000000;
 }
 #how_it_work.how_it_works .how_it_inner {
-  background-color: rgb(255, 255, 255);
+  background-color: #272727;
   padding: 70px 30px;
   border-radius: 30px;
   box-shadow: 0px 4px 30px #636363;
+}
+#how_it_work.how_it_works .how_it_inner h2 {
+  color: #eeff30;
+}
+#how_it_work.how_it_works .how_it_inner p {
+  color: white;
+  font-weight: 300;
 }
 #how_it_work.how_it_works .how_it_inner .step_block ul {
   max-width: 1080px;
@@ -386,8 +390,14 @@ h6 {
 }
 #how_it_work.how_it_works .how_it_inner .step_block ul li .step_text h4,
 #how_it_work.how_it_works .how_it_inner .step_block ul li .step_img h4 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #eeff30;
+}
+#how_it_work.how_it_works .how_it_inner .step_block ul li .step_text p,
+#how_it_work.how_it_works .how_it_inner .step_block ul li .step_img p {
+  font-weight: 300;
 }
 #how_it_work.how_it_works .how_it_inner .step_block ul li .step_text img,
 #how_it_work.how_it_works .how_it_inner .step_block ul li .step_img img {
@@ -453,8 +463,8 @@ h6 {
   margin-bottom: 30px;
 }
 #team_section .team_img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
@@ -515,9 +525,11 @@ footer .copyright {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
+  #header .nav-item {
+    margin-top: 0;
+  }
   #hero {
     padding-top: 10rem;
-    margin-top: -97px;
     background-position: top right;
   }
   #hero .hero_text {
@@ -532,15 +544,27 @@ footer .copyright {
   #hero .hero_slider {
     margin-top: 0;
   }
+  #features h2 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 75%;
+    margin: auto;
+  }
   #features .feature div {
-    text-align: center;
+    text-align: left;
     margin-bottom: 4rem;
+    max-width: 300px;
   }
   #features .feature div h5 {
-    font-size: 32px;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  #features .feature div p {
+    font-size: 16px;
+    font-weight: 300;
   }
   #features .feature_detail {
-    margin-top: 120px;
+    margin-top: 130px;
   }
   #features .hf-img img,
   #features .hf-img video {
@@ -548,6 +572,10 @@ footer .copyright {
     top: -125px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  #how_it_work.how_it_works .how_it_inner h2 {
+    font-size: 50px;
+    font-weight: 700;
   }
   #how_it_work.how_it_works .how_it_inner .step_block ul {
     padding-top: 0;

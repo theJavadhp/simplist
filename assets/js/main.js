@@ -41,12 +41,12 @@ $('#team_slider').owlCarousel({
 
 // Fix Header Js
 $(window).scroll(function () {
-  if ($(window).scrollTop() >= 250) {
+  if ($(window).scrollTop() >= 150) {
     $("header").addClass("fix_style");
   } else {
     $("header").removeClass("fix_style");
   }
-  if ($(window).scrollTop() >= 260) {
+  if ($(window).scrollTop() >= 150) {
     $("header").addClass("fixed");
   } else {
     $("header").removeClass("fixed");

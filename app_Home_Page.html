@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Simplist</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!--  scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="assets/libraries/OwlCarousel/owl.carousel.min.js"></script>
+
+    <!--  CSS Files -->
+    <link rel="stylesheet" href="assets/libraries/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libraries/OwlCarousel/owl.theme.default.min.css">
+    <link href="assets/libraries/aos/aos.css" rel="stylesheet" />
+    <link href="assets/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="assets/libraries/boxicons/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  ======================================================== -->
+</head>
+
+<body class="app_test">
+    <!-- Preloader -->
+    <div id="preloader">
+            <div id="loader"></div>
+          </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/img/logo_type.svg" width="106" alt="">
+            </div>
+            <div class="user">
+                <span>Hi Aleeza!</span>
+                <img src="assets/img/user.png" alt="">
+            </div>
+        </div>
+
+    </header>
+    <main class="home_page">
+        <div class="container">
+            <div class="list">
+                <div class="list-details">
+                    <h6>Pinned Tasks</h6>
+                    <div class="todos">
+                        <ul id="todos" class="list-items">
+                            <li class="home_list">
+                                <div class="list-title">
+                                    Weekly Shopping
+                                </div>
+                                <div class="list-info">
+                                    <span>updated</span>
+                                    <img src="assets/img/Profile Picture.png" alt="">
+                                    <i class='bx bxs-pin'></i>
+                                </div>
+                            </li>
+
+                            <li class="home_list">
+                                <div class="list-title">
+                                    Kale’s Birthday Prep </div>
+                                <div class="list-info">
+                                    <span class="fs-6 fw-bold">!</span>
+                                    <img src="assets/img/Profile Picture.png" alt="">
+                                    <i class='bx bxs-pin'></i>
+                                </div>
+                            </li>
+
+                            <li class="home_list">
+                                <div class="list-title">
+                                    Mother’s Day Dinner
+                                </div>
+                                <div class="list-info">
+                                    <span class="fs-6 fw-bold">!</span>
+                                    <img src="assets/img/Profile Picture.png" alt="">
+                                    <i class='bx bxs-pin'></i>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="list-details">
+                    <h6>All Tasks</h6>
+                    <div class="list_tags">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item a" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">All Lists</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Home Stuff</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">Work</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <i class='bx bx-plus'></i>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="todos">
+                                    <ul id="todos" class="list-items">
+                                        <li class="home_list">
+                                            <div class="list-title">
+                                                Weekly Shopping
+                                            </div>
+                                            <div class="list-info">
+                                                <span>updated</span>
+                                                <img src="assets/img/Profile Picture.png" alt="">
+                                                <i class='bx bxs-pin'></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="home_list">
+                                            <div class="list-title">
+                                                Kale’s Birthday Prep </div>
+                                            <div class="list-info">
+                                                <span class="fs-6 fw-bold">!</span>
+                                                <img src="assets/img/Profile Picture.png" alt="">
+                                                <i class='bx bxs-pin'></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="home_list">
+                                            <div class="list-title">
+                                                Mother’s Day Dinner
+                                            </div>
+                                            <div class="list-info">
+                                                <span class="fs-6 fw-bold">!</span>
+                                                <img src="assets/img/Profile Picture.png" alt="">
+                                                <i class='bx bxs-pin'></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="home_list">
+                                            <div class="list-title">
+                                                Chores
+                                            </div>
+                                            <div class="list-info">
+                                                <span>Completed</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="home_list">
+                                            <div class="list-title">
+                                                w21 Assignments
+                                            </div>
+                                            <div class="list-info">
+                                                <i class='bx bx-paperclip'></i>
+                                                <span class="fs-6 fw-bold">!</span>
+                                                <img src="assets/img/n10.svg" alt="">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="todos">
+                                    <ul id="todos" class="list-items">
+                                        <li class="home_list">
+                                            <div class="list-title">
+                                                Weekly Shopping
+                                            </div>
+                                            <div class="list-info">
+                                                <span>updated</span>
+                                                <img src="assets/img/Profile Picture.png" alt="">
+                                                <i class='bx bxs-pin'></i>
+                                            </div>
+                                        </li>
+
+                                        <li class="home_list">
+                                            <div class="list-title">
+                                                Chores
+                                            </div>
+                                            <div class="list-info">
+                                                <span>Completed</span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab" tabindex="0">
+                                <div class="todos">
+                                    <ul id="todos" class="list-items">
+
+
+                                        <li class="home_list">
+                                            <div class="list-title">
+                                                w21 Assignments
+                                            </div>
+                                            <div class="list-info">
+                                                <span class="fs-6 fw-bold">!</span>
+                                                <img src="assets/img/n10.svg" alt="">
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                                aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="new-task-btn">
+                <a class="btn" href="app.html">
+                    <i class='bx bx-plus bx-sm'></i>
+                    <span>Create New Task</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- =======================================================
+  ======================================================== -->
+    <!-- <div id="preloader"></div> -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- First Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Invite</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture.png" alt="">
+                            <span>
+                                Ali
+                            </span>
+                        </div>
+                        <button data-bs-target="#message" data-bs-toggle="modal">Invite</button>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture-1.png" alt="">
+                            <span>
+                                Lian Lan
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture-2.png" alt="">
+                            <span>
+                                Javad
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture-3.png" alt="">
+                            <span>
+                                Rida
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+                    <div class="list-item">
+                        <div>
+                            <img src="assets/img/Profile Picture-4.png" alt="">
+                            <span>
+                                Rose
+                            </span>
+                        </div>
+                        <button>Invite</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second Modal -->
+    <div class="modal fade" id="message" aria-hidden="true" aria-labelledby="ToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content align-items-center">
+                <div class="modal-header">
+                    <img src="assets/img/checkmark_lg.svg" alt="">
+                </div>
+                <div class="modal-body">
+                    <span>Ali</span> has been invited to “Weekly Shopping” Task!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Files -->
+    <script src="assets/libraries/aos/aos.js"></script>
+    <script src="assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

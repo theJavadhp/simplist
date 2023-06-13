@@ -86,3 +86,16 @@ $("#todos").on("click", "label", function () {
   $(this).closest("li").toggleClass("done");
   updateCount();
 });
+
+
+// Preloader JS
+
+function preloader_fade() {
+  $("#preloader").fadeOut('slow');
+}
+
+$(document).ready(function() {
+  window.setTimeout("preloader_fade();", 3000); //call fade in .5 seconds
+}
+)
+

@@ -108,19 +108,22 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #000000;
+  background-image:url(../img/Welcome.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 
   &:before {
     content: "";
     position: fixed;
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
-    border: 6px solid $color_secondary1;
+    top: calc(82% - 30px);
+    left: calc(50% - 15px);
+    border: 3px solid $color_secondary1;
     border-top-color: $color_primary;
     border-bottom-color: $color_primary;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     animation: animate-preloader 1s linear infinite;
   }
 }

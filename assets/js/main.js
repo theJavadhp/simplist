@@ -95,7 +95,7 @@ function preloader_fade() {
 }
 
 $(document).ready(function() {
-  window.setTimeout("preloader_fade();", 3000); //call fade in .5 seconds
+  window.setTimeout("preloader_fade();", 5000);
 }
 )
 

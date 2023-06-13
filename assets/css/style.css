@@ -11,6 +11,10 @@ body {
   background-color: #f0f0f0;
 }
 
+main {
+  overflow: hidden;
+}
+
 section {
   position: relative;
   padding-top: 4rem;

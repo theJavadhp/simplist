@@ -28,6 +28,10 @@ body {
   background-color: $color_secondary2;
 }
 
+main {
+  overflow: hidden;
+}
+
 section {
   position: relative;
   padding-top: 4rem;
